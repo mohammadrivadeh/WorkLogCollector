@@ -14,4 +14,10 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
     <SourceRoot Include="C:\Program Files (x86)\Progress\ToolboxNuGetPackages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\7.0.0\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\7.0.0\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgTelerik_UI_for_Wpf_70_Xaml Condition=" '$(PkgTelerik_UI_for_Wpf_70_Xaml)' == '' ">C:\Users\Administrator\.nuget\packages\telerik.ui.for.wpf.70.xaml\2023.1.117</PkgTelerik_UI_for_Wpf_70_Xaml>
+  </PropertyGroup>
 </Project>

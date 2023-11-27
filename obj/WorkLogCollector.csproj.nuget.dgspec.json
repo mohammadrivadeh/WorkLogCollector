@@ -48,6 +48,12 @@
       "frameworks": {
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
+          "dependencies": {
+            "Telerik.UI.for.Wpf.70.Xaml": {
+              "target": "Package",
+              "version": "[2023.1.117, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
